@@ -1,6 +1,6 @@
 [#ftl]
 [#import '/_imports/common.ftlh' as c]
-[@c.page title="Blogový článek"]
+[@c.page title=post.title]
     <div class="detail">
         <div class="detail-blog_post">
             <div class="nazev_clanku">${post.title} </div>
