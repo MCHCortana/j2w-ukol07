@@ -20,7 +20,8 @@ public class Post {
     private String body;
     private LocalDate published;
 
-    public Post(){}
+    public Post() {
+    }
 
     public Post(Integer id, String slug, String author, String title, String perex, String body, LocalDate published) {
         this.id = id;

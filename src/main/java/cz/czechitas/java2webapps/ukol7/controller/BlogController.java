@@ -18,9 +18,9 @@ public class BlogController {
         this.blogService = blogService;
     }
 
-    @GetMapping("/post/{slug}")
+    @GetMapping("/blog-clanek/{slug}")
     public Object detail(@PathVariable String slug) {
-        return new ModelAndView("detail")
+        return new ModelAndView("blogPost")
                 .addObject("post", blogService.singleBlog(slug));
     }
 
@@ -29,7 +29,5 @@ public class BlogController {
         return new ModelAndView("index")
                 .addObject("seznamBlogovychPostu", blogService.blogList());
     }
-
-
 
 }

@@ -13,7 +13,7 @@ body {
     color: black;
     margin: 0;
     min-height: 100vh;
-    background: antiquewhite url("https://images.unsplash.com/photo-1523666277082-9c36a712d619?q=80&w=2831&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center center/cover no-repeat;
+    background: pink url("https://images.unsplash.com/photo-1523666277082-9c36a712d619?q=80&w=2831&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center center/cover no-repeat;
 }
 
 a {
@@ -33,22 +33,6 @@ a {
     gap: 0.5rem;
 }
 
-.vymazat {
-    display: inline-block;
-}
-
-.edit-delete{
-    padding: 0.3rem;
-    padding-bottom:0.1rem;
-    border-radius: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    background-color: white;
-    flex-direction: column;
-}
-
 .edit-delete--form{
     width:100%;
     padding:0.2rem;
@@ -61,7 +45,7 @@ a {
     margin: 0;
 }
 
-.vizitka {
+.blog_post {
     width: 36em;
     height: 18em;
     border: 1px solid gray;
@@ -92,16 +76,15 @@ form.vizitka {
     height: auto;
 }
 
-.jmeno {
+.nazev_clanku {
     font-weight: bold;
     font-size: 18pt;
     text-align: center;
-    margin: 1em 0 1em 0;
+    margin:0;
 }
 
-.firma {
+.autor {
     text-align: center;
-    margin-bottom: 2em;
 }
 
 .udaje {
@@ -110,9 +93,9 @@ form.vizitka {
     align-items: flex-end;
 }
 
-.kontakty {
-    text-align: right;
-}
+/*.uryvek {*/
+/*    text-align: right;*/
+/*}*/
 
 .detail {
     min-height: 100vh;
@@ -121,6 +104,11 @@ form.vizitka {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.detail-blog_post{
+    background-color: white;
+    min-height:fit-content;
+    padding:1rem;
 }
 
 .detail nav {

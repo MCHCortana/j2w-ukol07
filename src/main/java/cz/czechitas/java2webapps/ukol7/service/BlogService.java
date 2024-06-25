@@ -1,4 +1,5 @@
 package cz.czechitas.java2webapps.ukol7.service;
+
 import cz.czechitas.java2webapps.ukol7.entity.Post;
 import cz.czechitas.java2webapps.ukol7.repository.BlogRepository;
 import org.springframework.data.domain.Page;
@@ -15,7 +16,7 @@ public class BlogService {
     }
 
     public Page<Post> blogList() {
-        Pageable pageable = PageRequest.of(0,7);
+        Pageable pageable = PageRequest.of(0, 7);
         return blogRepository.findBeforeToday(pageable);
 
     }
