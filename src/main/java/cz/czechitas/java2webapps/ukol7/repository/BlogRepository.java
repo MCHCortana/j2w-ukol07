@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface BlogRepository extends JpaRepository<Post, Integer> {
 
-    @Query("SELECT p FROM Post p WHERE p.slug = ?1")
+//    @Query("SELECT p FROM Post p WHERE p.slug = ?1")
     Post findBySlug(String slug);
 
     @Query("SELECT p FROM Post p WHERE p.published <= CURRENT_DATE ORDER BY p.published DESC")
