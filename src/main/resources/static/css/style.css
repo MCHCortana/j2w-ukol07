@@ -41,9 +41,6 @@ a {
     justify-content: center;
     align-items: center
 }
-.edit-delete--form .row{
-    margin: 0;
-}
 
 .blog_post {
     width: 36em;
@@ -59,21 +56,10 @@ a {
     transition: box-shadow 0.2s, transform 0.2s;
 }
 
-.vizitka--nova {
-    background-color: #FFFFFF66;
-    border: 3px dotted white;
-    justify-content: center;
-    align-items: center;
-}
-
-a:hover .vizitka {
+a:hover .blog_post {
     box-shadow: 10px 10px 10px black;
     transform: translate(-5px, -5px);
     transition: box-shadow 0.2s, transform 0.2s;
-}
-
-form.vizitka {
-    height: auto;
 }
 
 .nazev_clanku {
@@ -111,49 +97,16 @@ form.vizitka {
     padding:1rem;
 }
 
-.detail nav {
-    margin: 1em;
-    font-size: 150%;
-}
-
-.detail nav a {
-    color: white;
-}
-
-.detail nav a:hover {
-    text-decoration: underline;
-}
-
-.mapa {
-    width: 36em;
-    height: 36em;
-    border: 1px solid gray;
-    margin: 1em;
-    box-shadow: 5px 5px 10px black;
-}
-
 .row {
     margin-bottom: 1em;
 }
 
-.form-controls {
+.pager-list {
+    text-align: center;
+    flex-direction: column;
+    color:white;
+    font-size:1rem;
+    padding:1rem;
     display: flex;
-    justify-content: flex-end;
-}
-
-label {
-    display: block;
-    margin-bottom: 0.5em;
-}
-
-input {
-    width: 100%;
-}
-
-#psc {
-    width: 10em;
-}
-
-.error {
-    color: red;
+    justify-content: center;
 }

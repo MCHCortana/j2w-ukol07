@@ -19,5 +19,9 @@
                 </a>
             [/#items]
         </div>
+        <div class="pager-list">
+            [@c.totalCount /]
+            [@c.pager /]
+        </div>
     [/#list]
 [/@c.page]
